@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+
+<p id="demo1"></p>
+<script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        var abc;
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(this.responseText);
+                abc= response.allProducts;
+            }
+        }
+        xhttp.open("GET", "guitarData.json", true);
+        xhttp.send();
+    }
+    function def(){
+
+    }
+</script>
+</body>
+</html>

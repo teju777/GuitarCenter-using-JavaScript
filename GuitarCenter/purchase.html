@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:Num="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #displayInfo, #shippingDetails, #price{
+            display: none;
+            margin-left: 500px;
+            color: white;
+        }
+        #z{
+            display: inline-block;
+            position: absolute;
+
+        }
+        .main, .one, .two{
+
+            margin-top: 10px;
+            margin-left: 500px;
+
+        }
+        .both{
+            display: inline-block;
+
+            width:100%;
+            height:250px;
+        }
+        .b{
+            position: relative;
+            top:15px;
+            left: 500px;
+            border: 1px solid white;
+            width: 260px;
+            height: 320px;
+            padding-left: 20px;
+            padding-top: 1px;
+            font-size: medium;
+            color: white;
+        }
+        #ten{
+            border: 1px solid white;
+            border-radius: 40px;
+            margin-left: 250px;
+            width: 800PX;
+            height: 100px;
+            margin-top: 25px;
+            color: white;
+        }
+        #buy{
+            display: inline-block;
+            margin-left: 1000px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        body{
+            background: url("sd.jpg");
+            background-size: 1400px 1000px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<div class="both">
+<div>
+    <img id="z" height="250" width="450"/>
+</div>
+
+<div class="main">
+    <button type="button" onclick="dispInfo()" id="last"> ProductInfo</button>
+</div>
+<div id = "displayInfo"></div>
+
+<div class="one">
+    <button type="button" onclick="details()" id="f"> ShippingDetails</button>
+</div>
+<div id = "shippingDetails"></div>
+
+<div class="two">
+    <button type="button" onclick="price()" id="h"> price</button>
+</div>
+<div id = "price"></div>
+</div>
+
+<div class ="b"> <h3>Purchase Form </h3>
+    <form name="myform" >
+    FirstName: <br><input type="text" name="firstName" required><br><br>
+    LastName: <br> <input type="text" name="lastName" required><br><br>
+    Card Num: <br><input type="text" name="CC" id="One" placeholder="Enter 16 digit cc number" onchange="myFun()" required><br><br>
+    Email Id: <br><input type="email" name="@gmail.com" id="ele" required><br><br>
+
+    <input type="button" value="Go to review" onclick="validateform()">
+</form>
+
+</div>
+
+<div id="ten" style="padding: 50px;">
+    <p id="p1"></p>
+</div>
+
+<button id="buy" type="button" onclick="buy()">buy</button>
+
+<script src="page2.js" type="text/javascript"></script>
+    </body>
+</html>

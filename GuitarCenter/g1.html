@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+
+        }
+
+        li {
+            float: left;
+            margin-left: 80px;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
+        .main, .one, .two{
+            margin:auto;
+            margin-left:460px;
+            margin-top: 40px;
+
+
+        }
+        #displayInfo{
+            display: none;
+            margin-left: 500px;
+            color: white;
+        }
+        #shippingDetails{
+            display: none;
+            margin-left: 500px;
+            color: white;
+        }
+        #price{
+            display: none;
+            margin-left: 500px;
+            color: white;
+        }
+
+        #z{
+            margin-left: 460px;
+
+        }
+        #last{
+            display: block;
+            padding-left: 120px;
+            padding-right: 120px;
+           font-size: 30px;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+        }
+        #f {
+            display: block;
+            padding-left: 90px;
+            padding-right: 95px;
+            font-size: 30px;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+        }
+        #h{
+            display: block;
+            border-radius: 10px;
+            padding-left: 165px;
+            padding-right: 165px;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+        }
+        #buy{
+            display: inline-block;
+            margin-left: 1000px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        body{
+            background:url("1.jpg");
+            background-size: 2000px 1000px;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="sd">Guitars</a>
+        <div class="dropdown-content">
+            <a href="#">Electric Guitars</a>
+            <a href="#">Acoustic Guitars</a>
+            <a href="#">Acoustic-Electric Guitars</a>
+            <a href="#">Classical Guitars</a>
+        </div>
+    <li>
+    <li><a href="#bass">bass</a></li>
+    <li><a href="#drums">drums</a></li>
+    <li><a href="#keyboards">keyboards</a></li>
+    <li><a href="#Dj & lighting">Dj & lightings</a></li>
+    <li><a href="#used gear">Used Gear</a></li>
+    <li><a href="#Clearance">Clearance</a></li>
+
+
+</ul>
+
+<div>
+    <img id="z" height="350" width="400"/>
+</div>
+
+
+<button type = "button" value = "prev" onclick = "prev()" style="margin-left: 460px; margin-top: 10px;">PREVIOUS</button>
+
+<button type = "button" value = "next" onclick = "next()" style="margin-left: 260px;">NEXT</button>
+
+<div class="main">
+    <button type="button" onclick="dispInfo()" id="last"> Product Info</button>
+</div>
+<div id = "displayInfo"></div>
+
+<div class="one">
+    <button type="button" onclick="details()" id="f"> Shipping Details</button>
+</div>
+<div id = "shippingDetails"></div>
+
+<div class="two">
+    <button type="button" onclick="price()" id="h"> Price</button>
+</div>
+<div id = "price"></div>
+
+
+
+<button id="buy" type="button" onclick="buy()">buy</button>
+
+<script src="page1.js" type="text/javascript"> </script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
